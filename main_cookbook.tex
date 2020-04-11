@@ -11,6 +11,11 @@ a4paper,
 \usepackage{lmodern}
 \usepackage[ngerman, english]{babel}
 
+\addto\captionsenglish{% Replace "english" with the language you use
+  \renewcommand{\contentsname}%
+    {\"Ubersicht}%
+  }
+
 \usepackage{nicefrac}
 
 \usepackage[
@@ -91,6 +96,7 @@ a4paper,
 
 \section{Hauptgerichte}
 \include{tex/main_dishes/ginger_basil_noodles}
+\include{tex/main_dishes/vietnamesische_fleischbaellchen}
 
 \section{Desserts}
 \include{tex/desserts/cheescake}
