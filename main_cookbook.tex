@@ -3,20 +3,21 @@ a4paper,
 %twoside,
 11pt
 ]{article}
-\listfiles
+
+%\listfiles
 
 % encoding, font, language
 \usepackage[T1]{fontenc}
 \usepackage[latin1]{inputenc}
 \usepackage{lmodern}
 \usepackage[ngerman, english]{babel}
+\usepackage{nicefrac}
 
 \addto\captionsenglish{% Replace "english" with the language you use
   \renewcommand{\contentsname}%
     {\"Ubersicht}%
   }
 
-\usepackage{nicefrac}
 
 \usepackage[
     handwritten,
@@ -25,7 +26,6 @@ a4paper,
 ]
 {xcookybooky}
 
-\usepackage{blindtext}    % only needed for generating test text
 
 \DeclareRobustCommand{\textcelcius}{\ensuremath{^{\circ}\mathrm{C}}}
 
@@ -57,8 +57,8 @@ a4paper,
 
 \usepackage{hyperref}    % must be the last package
 \hypersetup{%
-    pdfauthor            = {Sven Harder},
-    pdftitle             = {Example Recipes for xcookybooky},
+    pdfauthor            = {Tim Wolf},
+    pdftitle             = {Rezeptesammlung},
     pdfsubject           = {Recipes},
     pdfkeywords          = {example, recipes, cookbook, xcookybooky},
     pdfstartview         = {FitV},
@@ -74,29 +74,27 @@ a4paper,
 }
 
 \hbadness=10000	% Ignore underfull boxes
+% \makeatletter
 
 \begin{document}
 
 \title{Rezeptesammlung}
 \author{Tim Wolf\\ \href{mailto:tim.m.wolf@gmx.de}{tim.m.wolf@gmx.de}}
 \maketitle
-% \newpage
 \cleardoublepage
-
-
+%
+%
 \tableofcontents
 
-\newpage
-
+%\newpage
 \section{Vorspeisen}
-
-% \include{tex/Mousse_au_Chocolat}
-%
-% \include{tex/Complete_Recipe}
+\cleardoublepage
 
 \section{Hauptgerichte}
+
 \include{tex/main_dishes/ginger_basil_noodles}
 \include{tex/main_dishes/vietnamesische_fleischbaellchen}
+\include{tex/main_dishes/vegetarisches_curry}
 
 \section{Desserts}
 \include{tex/desserts/cheescake}
