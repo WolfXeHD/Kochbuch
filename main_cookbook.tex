@@ -10,7 +10,7 @@ a4paper,
 \usepackage[T1]{fontenc}
 \usepackage[latin1]{inputenc}
 \usepackage{lmodern}
-\usepackage[ngerman, english]{babel}
+\usepackage[ngerman, english, spanish]{babel}
 \usepackage{nicefrac}
 
 \addto\captionsenglish{% Replace "english" with the language you use
@@ -20,7 +20,7 @@ a4paper,
 
 
 \usepackage[
-    handwritten,
+    % handwritten,
     nowarnings,
     %myconfig
 ]
@@ -78,8 +78,8 @@ a4paper,
 
 \begin{document}
 
-\title{Rezeptesammlung}
-\author{Tim Wolf\\ \href{mailto:tim.m.wolf@gmx.de}{tim.m.wolf@gmx.de}}
+\title{Rezeptesammlung / Recetario}
+\author{Tim Wolf \& Mar\'{i}a Ram\'{i}rez\\ \href{mailto:tim.m.wolf@gmx.de}{tim.m.wolf@gmx.de}, \href{mailto:maclarata@gmail.com}{maclarata@gmail.com}}
 \maketitle
 \cleardoublepage
 %
@@ -87,10 +87,11 @@ a4paper,
 \tableofcontents
 
 %\newpage
-\section{Vorspeisen}
+\section{Vorspeisen  / Entradas}
 \cleardoublepage
+\include{tex/starter/Staatenbrot}
 
-\section{Hauptgerichte}
+\section{Hauptgerichte / Platos Principales}
 
 \include{tex/main_dishes/ginger_basil_noodles}
 \include{tex/main_dishes/vietnamesische_fleischbaellchen}
@@ -100,12 +101,27 @@ a4paper,
 \include{tex/main_dishes/arepas}
 \include{tex/main_dishes/lentejas}
 \include{tex/main_dishes/linsensuppe}
+\include{tex/main/CurryPolloHabichuelas}
+\include{tex/main/Pizza}
+
+\include{tex/main/ZucchiniKartoffelEintopf}
+
+\include{tex/main/PakChoi_ThaiCurry}
+\include{tex/main/StroganoffChampinones}
+\include{tex/main/PolloCilantro}
 
 
-\section{Desserts}
+\section{Desserts / Postres}
 \include{tex/desserts/cheescake}
+\include{tex/desserts/BrowniesMilo}
 
-\section{Marmelade und Saucen}
+\section{Saucen / Salsas}
 \include{tex/saucen/chilimarmelade}
+
+\include{tex/saucen/HonneyMustard}
+\include{tex/saucen/Caesar}
+\include{tex/saucen/BalsamicDijon}
+\include{tex/saucen/ZestyRanch}
+
 
 \end{document}

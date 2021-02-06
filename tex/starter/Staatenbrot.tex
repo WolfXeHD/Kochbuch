@@ -1,0 +1,58 @@
+\begin{otherlanguage}{ngerman}
+
+\setHeadlines
+{% translation
+    inghead = Zutaten,
+    prephead = Zubereitung,
+    hinthead = Tipp,
+    continuationhead = Fortsetzung,
+    continuationfoot = Fortsetzung auf n\"achster Seite,
+    portionvalue = Personen,
+}
+
+% Complete recipe example
+\begin{recipe}
+[ % Optionale Eingaben
+    preparationtime = {\unit[40]{Minuten}},
+    bakingtime = {\unit[25]{Minuten}},
+    bakingtemperature={\protect\bakingtemperature{
+        topbottomheat=\unit[200]{\textcelcius}
+        }},
+    portion = {\portion{2}},
+    source = Privat
+]
+{Staatenbrot}
+    \graph
+    {% Bilder
+        % small=pic/glass,    % kleines Bild
+        % big=pic/ingredients % großes (längeres) Bild
+    }
+
+    \ingredients{%
+        \unit[150]{g} & Haferflocken (kernig und zart)\\
+        \unit[130]{g} & Sonnenblumenkerne\\
+        \unit[60]{g}  & gehackte N{\"u}sse\\
+        \unit[50]{g}  & Leinsamen\\
+        \unit[50]{g}  & Leinsamen geschrotet\\
+        \unit[20]{g}  & K{\"u}rbiskerne\\
+        \unit[20]{g}  & Chiasamen\\
+        \unit[20]{g}  & Flohsamenschalen\\
+        \unit[1]{TL} & Salz\\
+        \unit[3]{EL} & {\"O}l\\
+        \unit[2]{EL} & Algavendicksaft oder Honig oder Dattelsirup oder...\\
+        \unit[350-360]{ml} & warmes Wasser\\
+    }
+
+    \preparation{%
+      \step Backofen auf \unit[200]{\textcelcius}  vorheizen. S\"u{\ss}kartoffel, Kartoffeln und Zucchini in ca. 1 cm gro{\ss}e St\"ucke schneiden. Auf ein Backblech geben, mit Oliven\"ol, Pfeffer und Salz bestreuen und f\"r 25 Minuten in den Backofen geben.
+    }
+
+    \hint{%
+    \begin{itemize}
+        \item La yema es indispensable para que queden melcochudos.
+        \item Dejar enfriar antes de cortar.
+    \end{itemize}
+    }
+
+\end{recipe}
+\end{otherlanguage}
